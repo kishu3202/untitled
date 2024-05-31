@@ -14,7 +14,7 @@ class DemoWindow extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           useMaterial3: true,
-          // primarySwatch: Colors.brown,
+          primarySwatch: Colors.brown,
           // colorScheme: ColorScheme.light(background: Colors.black26, surface: Colors.brown)
       ),
     );

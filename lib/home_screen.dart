@@ -24,20 +24,36 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(width: 300,
             height: 450,
             color: Colors.brown.shade200,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
+              child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.red.shade700, // background
-                        onPrimary: Colors.white, // foreground
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 50),
+                        child: Text("Label 1"),
+                      )
+                    ],
+                  ),
+                  Spacer(), // This will push the next row to the bottom
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.red.shade700, // background
+                            onPrimary: Colors.white, // foreground
+                          ),
+                          onPressed: () { },
+                          child: Text('Enter'),
+                        ),
                       ),
-                      onPressed: () { },
-                      child: Text('Enter'),
-                    ),
+                      
+                    ],
                   ),
                 ],
               ),
